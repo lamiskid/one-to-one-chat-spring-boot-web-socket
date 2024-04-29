@@ -31,8 +31,9 @@ public class ChatController {
                 )
         );
     }
-@GetMapping("/")
-    public String () {
+    @GetMapping("/")
+    public String homePage(){
+        
         return "index";
     }
     
