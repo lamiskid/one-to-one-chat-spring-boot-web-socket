@@ -31,6 +31,11 @@ public class ChatController {
                 )
         );
     }
+@GetMapping("/")
+    public String () {
+        return "index";
+    }
+    
 
     @GetMapping("/messages/{senderId}/{recipientId}")
     public ResponseEntity<List<ChatMessage>> findChatMessages(@PathVariable String senderId,
